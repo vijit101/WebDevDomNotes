@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF - 8">
+    <meta name = "viewport" content = "width = device - width, initial - scale = 1.0">
+    <title>Document</title>
+</head>
+<body id="htmlbody">
+    <button id ="btn1"> Say Hello </button>
+
+    <script>
+    
+        // on clicking the button append hello to the page
+
+        let btn = document.getElementById('btn1');
+        btn.addEventListener('click',function(e){
+           let para = document.createElement("p");
+           para.innerText = "hello";
+
+           let bdy = document.querySelector("body");
+           bdy.appendChild(para);
+        });
+        
+
+    </script>
+    <script src="script.js" ></script>
+    
+</body>
+</html>
